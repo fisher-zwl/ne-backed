@@ -1,0 +1,51 @@
+<div class="info-content">
+    <div class="tip-wrap2 clear-fix">
+        <img src="../img/tip-header.png">
+        <span>恭喜您获得奖品一件，请选择您喜欢的产品</span>
+    </div>
+    <div class="production-wrap clear-fix">
+        <ul id="select">
+            {{#each data}}
+              {{#if active}}
+            <li value="{{id}}">
+                <span>{{name}}</span>
+                <img src="../img/checkbox_a.png">
+            </li>
+            {{else}}
+            <li value="{{id}}">
+                <span>{{name}}</span>
+                <img src="../img/checkbox.png">
+            </li>
+            {{/if}}
+            {{/each}}
+
+
+            <!--li value="0">
+                <span>洗面奶一瓶</span>
+                <img src="../img/checkbox_a.png">
+            </li>
+            <li value="1">
+                <span>口红一支</span>
+                <img src="../img/checkbox.png">
+            </li>
+            <li value="2">
+                <span>面膜一包</span>
+                <img src="../img/checkbox.png">
+            </li>-->
+        </ul>
+    </div>
+    <div class="info-wrap clear-fix">
+        <p>奖品收货地址</p>
+        <input id="address" placeholder="请输入地址">
+        <p>联系人</p>
+        <input id="name" placeholder="请填写联系人姓名">
+        <p>手机号码</p>
+        <input id="mobile" placeholder="请填写联系人手机号码">
+    </div>
+</div>
+<div class="submit mb-t">
+    <div class="b" id="submit-production"><span>领取奖品</span></div>
+</div>
+<script src="js/info.js"></script>
+
+
